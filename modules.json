@@ -3,10 +3,20 @@
     "name": "SmithMagic", 
     "author": "ExiTeD, Relena", 
     "url": "https://github.com/DofMod/SmithMagic/releases/download/v2.11_1.0/SmithMagic_2.11.zip", 
-    "description": "Une amélioration de l'interface de forgemagie", 
+    "description": "An improved Smithmagic interface", 
     "category": "GUI, Forgemagie", 
     "version": "1.0", 
     "dofusVersion": "2.19", 
     "lastUpdateDate": "2014.04.19" 
+},
+{
+    "name": "KeyRingManager", 
+    "author": "Relena", 
+    "url": "https://github.com/DofMod/KeyRingManager/releases/download/v2.11_1.0/KeyRingManager_2.11_1.0.zip", 
+    "description": "A new interface to manage the 'Bunch of keys'", 
+    "category": "GUI", 
+    "version": "1.0", 
+    "dofusVersion": "2.19", 
+    "lastUpdateDate": "2014.06.02" 
 }
 ]
