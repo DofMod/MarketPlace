@@ -38,5 +38,15 @@
     "version": "1.0", 
     "dofusVersion": "2.19", 
     "lastUpdateDate": "2014.06.02" 
+},
+{
+    "name": "TaxiMap", 
+    "author": "Relena", 
+    "url": "https://github.com/DofMod/TaxiMap/releases/download/v2.11_1.0/TaxiMap_2.11_1.0.zip", 
+    "description": "This add a new way to use Zaaps", 
+    "category": "Zaap", 
+    "version": "1.0", 
+    "dofusVersion": "2.19", 
+    "lastUpdateDate": "2014.06.06" 
 }
 ]
