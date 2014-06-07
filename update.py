@@ -18,7 +18,7 @@ if __name__ == "__main__" :
 	repositories = json.loads(result.read())
 	modsInfos = []
 	for repository in repositories:
-		if repository["name"] == "MarketPlace":
+		if repository["name"] == "MarketPlace" or repository["name"] == "DofModUtils":
 			continue
 
 		try:
