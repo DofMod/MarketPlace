@@ -1,7 +1,10 @@
 #!python
 
-import urllib2
+from __future__ import print_function
+
 import json
+import sys
+import urllib2
 
 outPath = "modules.json"
 
@@ -9,7 +12,7 @@ if __name__ == "__main__" :
 	try:
 		result = urllib2.urlopen("https://api.github.com/users/dofmod/repos")
 	except urllib2.HTTPError:
-		print("Repositories request error")
+		print("Repositories request error", file=sys.stderr)
 		exit()
 
 	repositories = json.loads(result.read())
@@ -22,10 +25,10 @@ if __name__ == "__main__" :
 			result = urllib2.urlopen("https://raw.githubusercontent.com/dofmod/{}/master/mod.json".format(repository["name"]))
 		except urllib2.HTTPError as error:
 			if error.code == 404:
-				print("No mod.json file in the repository {}".format(repository["name"]));
+				print("No mod.json file in the repository {}".format(repository["name"]), file=sys.stderr);
 				continue
 
-			print("Repository {} request error".format(repository["name"]))
+			print("Repository {} request error".format(repository["name"]), file=sys.stderr)
 			continue
 
 		modsInfos.append(json.loads(result.read())[0])
